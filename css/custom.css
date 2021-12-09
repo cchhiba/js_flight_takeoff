@@ -1,0 +1,24 @@
+
+.fa-plane {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  font-size: 10rem;
+  transform: rotate(-46deg);
+  /* 2. Create transition code here */
+  /* transition: all 10s ease;  */
+  transition-property: bottom, font-size;
+  transition-duration: 10s;
+  transition-timing-function: cubic-bezier(1,.1,.15,.72);
+}
+
+
+  /* Where the css transition goes... */
+.take-off
+{
+  color: blue;
+  bottom: 60%;
+  font-size: 20rem;
+}
+
+/* from w3schools https://www.w3schools.com/css/css3_transitions.asp */

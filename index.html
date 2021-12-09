@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- font awesome link -->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+
+  <!-- custom css file -->
+  <link rel="stylesheet" href="css/custom.css">
+  <title>plane</title>
+</head>
+
+<!-- START of body -->
+
+<body>
+
+  <div class="plane">
+    <i class="fa fa-plane" aria-hidden="true"></i>
+  </div>
+
+
+  <!-- jquery plugin -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      // 1. A click event that will add a class...
+      $('.fa-plane').click(function() {
+        $('.fa-plane').addClass('take-off');
+        var audio = new Audio('takeoff.mp3');
+        audio.play()
+
+      console.dir(audio);
+
+// explaining what an object is
+      var objectThing = {
+        charissa: 'black shirt',
+        josh: 'white shirt',
+        toby: 'purple stripey shirt',
+        ambar: 'burgandy shoes'
+      }
+
+      console.dir(objectThing);
+
+      });
+    });
+  </script>
+
+</body>
+<!-- END of body -->
+
+</html>
